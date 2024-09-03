@@ -5,7 +5,7 @@ function BuyCard() {
     <div className="relative mt-6 bg-shop-background rounded-2xl bg-cover outline">
       <div className="flex flex-row items-center justify-center space-x-5 mx-40  h-80 mt-3">
         {/*Card 1 */}
-        <div className="w-60 h-80 bg-gray-50 p-3 flex flex-col gap-1 rounded-2xl transition-transform transform hover:scale-105 hover:shadow-xl duration-500">
+        <div className="w-60 h-80 outline bg-gray-50 p-3 flex flex-col gap-1 rounded-2xl transition-transform transform hover:scale-105 hover:shadow-xl duration-500">
           <div className="flex items-center justify-center h-48  rounded-xl">
             <img src="/attention-please.png" className="h-48 rounded-xl"></img>
           </div>
@@ -31,7 +31,7 @@ function BuyCard() {
         </div>
 
         {/*Card 2 */}
-        <div className="w-60 h-80 bg-gray-50 p-3 flex flex-col gap-1 rounded-2xl transition-transform transform hover:scale-105 hover:shadow-xl duration-500">
+        <div className="w-60 h-80 outline bg-gray-50 p-3 flex flex-col gap-1 rounded-2xl transition-transform transform hover:scale-105 hover:shadow-xl duration-500">
           <div className="flex items-center justify-center h-48  rounded-xl">
             <img src="/self-love-pro.jpg" className="h-48 rounded-xl"></img>
           </div>
@@ -57,7 +57,7 @@ function BuyCard() {
         </div>
 
         {/*Card 3 */}
-        <div className="w-60 h-80 bg-gray-50 p-3 flex flex-col gap-1 rounded-2xl transition-transform transform hover:scale-105 hover:shadow-xl duration-500">
+        <div className="w-60 h-80 outline bg-gray-50 p-3 flex flex-col gap-1 rounded-2xl transition-transform transform hover:scale-105 hover:shadow-xl duration-500">
           <div className="flex items-center justify-center h-48  rounded-xl">
             <img src="/toxic.png" className="h-48 rounded-xl"></img>
           </div>
