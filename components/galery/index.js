@@ -119,20 +119,29 @@ function PhotoGalery() {
             <SiGooglephotos className=" text-xl mb-5" />
           </div>
           <div className="flex flex-row justify-center items-center mb-6">
-            <h1 className="text-6xl font-Rowdies">PHOTO GALLERY</h1>
+            <h1 className="text-3xl lg:text-6xl font-Rowdies sm:whitespace-nowrap">
+              PHOTO GALLERY
+            </h1>
           </div>
         </div>
         <div>
           <Swiper
-            slidesPerView={6}
             spaceBetween={30}
             freeMode={true}
-            /*
-          pagination={{
-            clickable: true,
-          }}*/
             modules={[FreeMode, Pagination]}
             className="w-full h-full"
+            breakpoints={{
+              320: {
+                slidesPerView: 2,
+              },
+              640: {
+                slidesPerView: 3,
+              },
+
+              1024: {
+                slidesPerView: 6,
+              },
+            }}
           >
             {imageData.map((src, index) => (
               <SwiperSlide key={index}>
@@ -159,20 +168,29 @@ function PhotoGalery() {
             <SiGooglephotos className=" text-xl mb-5" />
           </div>
           <div className="flex flex-row justify-center items-center mb-6">
-            <h1 className="text-6xl font-Rowdies">RETRO CARTOON</h1>
+            <h1 className="text-3xl lg:text-6xl font-Rowdies sm:whitespace-nowrap">
+              RETRO CARTOON
+            </h1>
           </div>
         </div>
         <div>
           <Swiper
-            slidesPerView={6}
             spaceBetween={30}
             freeMode={true}
-            /*
-          pagination={{
-            clickable: true,
-          }}*/
             modules={[FreeMode, Pagination]}
             className="w-full h-full"
+            breakpoints={{
+              320: {
+                slidesPerView: 2,
+              },
+              640: {
+                slidesPerView: 3,
+              },
+
+              1024: {
+                slidesPerView: 6,
+              },
+            }}
           >
             {cartoonData.map((src, index) => (
               <SwiperSlide key={index}>

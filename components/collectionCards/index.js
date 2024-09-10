@@ -39,22 +39,26 @@ function CollectionCards() {
     <div>
       <Toaster />
       <div className="flex flex-row justify-center items-center mb-6">
-        <h1 className="text-6xl font-Rowdies uppercase">Your Collection</h1>
+        <h1 className="text-3xl  lg:text-6xl font-Rowdies uppercase">
+          Your Collection
+        </h1>
       </div>
-      <div className="flex flex-row space-x-5">
+      <div className="flex flex-col items-center">
         {collection.length > 0 ? (
-          collection.map((image, index) => (
-            <div
-              key={index}
-              onClick={() => handlePopup(image)}
-              className="w-56 h-64 bg-blog-color-1 flex items-center justify-center cursor-pointer rounded-2xl "
-            >
-              <img
-                src={image}
-                className="max-w-full max-h-full object-contain rounded-2xl outline hover:shadow-2xl hover:scale-105 transition-transform   duration-300"
-              />
-            </div>
-          ))
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-5">
+            {collection.map((image, index) => (
+              <div
+                key={index}
+                onClick={() => handlePopup(image)}
+                className="w-56 h-64 bg-blog-color-1 flex items-center justify-center cursor-pointer rounded-2xl "
+              >
+                <img
+                  src={image}
+                  className="max-w-full max-h-full object-contain rounded-2xl outline hover:shadow-2xl hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
         ) : (
           <div className="flex flex-row justify-center items-center mb-6">
             <p className="text-3xl font-Rowdies uppercase whitespace-nowrap">
@@ -63,6 +67,7 @@ function CollectionCards() {
           </div>
         )}
       </div>
+
       {/* Popup içerik alanı */}
       {isPopupOpen && (
         <div
